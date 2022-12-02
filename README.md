@@ -15,5 +15,12 @@ npm run serve
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+#### git init
+#### git clone "https://path"
+#### git add .
+#### git status
+#### git commit -m "text"
+#### git checkout -b namebranch
+#### git checkout namebranch
+#### git push -u origin brabchname
+

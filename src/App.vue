@@ -1,399 +1,46 @@
 <template>
-  <header class="header">
-		<div class="container">
-			<div class="header-wrapper">
-				<div class="header-main">
-					<a href="#main" class="logo header__logo">
-						<img src="./assets/img/logo.svg" alt="Logo: A 200" class="logo__img">
-					</a>
-					<!-- /.logo -->
-					<nav class="menu">
-						<ul class="menu-list">
-							<li class="menu-list__item">
-								<a href="#design" class="menu-list__link">
-									Дизайн
-								</a>
-							</li>
-							<li class="menu-list__item">
-								<a href="#feature" class="menu-list__link">
-									Характеристики
-								</a>
-							</li>
-							<li class="menu-list__item">
-								<a href="#main" class="menu-list__link">
-									Дилерская сеть
-								</a>
-							</li>
-							<li class="menu-list__item">
-								<a href="#contacts" class="menu-list__link">
-									Тест-драйв
-								</a>
-							</li>
-						</ul>
-					</nav>
-					<!-- /.menu -->
-				</div>
-				<!-- /.header-main -->
-				<a href="tel:88005437809" class="phone">
-					8 800 543 78 09
-				</a>
-				<button class="humburger-menu" aria-label="Бургер меню">
-				</button>
-			</div>
-			<!-- /.header-wrapper -->
-		</div>
-	</header>
+  <Header/>
 	<!-- header (end) -->
 
 	<!-- main (start) -->
-	<section class="main" id="main">
-		<div class="container">
-			<div class="main-wrapper">
-				<div class="offer">
-					<h1 class="main__title">A 200 Saloon</h1>
-					<p class="main__descr">Поражающий внешний облик
-						и&nbsp;впечатляющая функциональность</p>
-					<a href="#contacts" type="button" class="button main__button">
-						Тест-драйв
-					</a>
-					<a href="#design" class="main__scroll" aria-label="к следующему экрану"></a>
-
-				</div>
-				<!-- /.offer -->
-				<div class="main-img">
-					<a href="https://www.youtube.com/watch?v=w7doL2EpxX0" class="play">
-
-						Смотреть видео
-					</a>
-
-				</div>
-			</div>
-			<!-- /.main-wrapper -->
-		</div>
-	</section>
+	<Main/>
 	<!-- main (end) -->
 
 	<!-- design (start) -->
-	<section class="section design" id="design">
-		<div class="container">
-			<div class="design-wrapper">
-				<div class="design-block">
-					<img src="./assets/img/car/image-5.png" alt="A 200" class="feature__img design-block__img"
-						data-tabs-field="interior">
-            
-					<img src="./assets/img/car/image-4.png" alt="A 200" class="feature__img design-block__img hidden"
-						data-tabs-field="body">
-					<div class="design-text">
-						<h2 class="section__title design__title">
-							Комфорт в деталях
-						</h2>
-						<h2 class="section__title design__title hidden">
-							Притягивает взгляды
-						</h2>
-						<ul class="design-list">
-							<li>
-								<button type="button" class="design-list__item design-list__item_active"
-									data-tabs-handler="interior" data-some-attr="attr">Дизайн салона</button>
-							</li>
-							<li>
-								<button type="button" class="design-list__item" data-tabs-handler="body">Дизайн
-									кузова</button>
-							</li>
-						</ul>
-						<!-- /.design-list -->
-						<ul>
-							<li class="design__descr" data-tabs-field="interior">
-								<p class="design__description-text">
-									Будь то час пик, длительная ночная поездка или незнакомая дорога, ваш новый A-Class
-									седан ощутимо снимет с вас нагрузку, особенно в стрессовых ситуациях. Время, которое
-									вы проводите за рулем автомобиля, не должно проходить впустую. Это время для
-									восстановления сил. Автомобиль надежно и с комфортом доставит вас до места
-									назначения.
-								</p>
-								<button class="more">
-									— Узнать больше
-								</button>
-							</li>
-							<li class="design__descr hidden" data-tabs-field="body">
-								<p class="design__description-text">
-									Благодаря длинной задней части, новый A-Class Sedan обладает еще лучшими
-									аэродинамическими показателями, чем A-Class Hatchback (Cd от 0,25). С показателем
-									0,22 новая модель седана сравнялась с мировым рекордом CLA Coupe. A-Class Sedan
-									имеет самое низкое аэродинамическое сопротивление среди всех серийных автомобилей в
-									мире.
-								</p>
-								<button class="more">
-									— Узнать больше
-								</button>
-							</li>
-						</ul>
-					</div>
-			
-				</div>
-          <ul>
-					<li class="design-images" data-tabs-field="interior">
-            
-						<img src="./assets/img/design/interior01.jpg" alt="A 200" class="design__img">
-						<img src="./assets/img/design/interior02.jpg " alt="A 200" class="design__img">
-						<img src="./assets/img/design/interior03.jpg " alt="A 200" class="design__img">
-						<img src="./assets/img/design/interior04.jpg" alt="A 200" class="design__img">
-					</li>
-					<li class="design-images hidden" data-tabs-field="body">
-						<img src="./assets/img/design/body01.jpg" alt="A 200" class="design__img">
-						<img src="./assets/img/design/body02.jpg" alt="A 200" class="design__img">
-						<img src="./assets/img/design/body03.jpg" alt="A 200" class="design__img">
-						<img src="./assets/img/design/body04.jpg" alt="A 200" class="design__img">
-					</li>
-				</ul>
-				
-			</div>
-			
-		</div>
-	</section>
+	<Design/>
 	
-
+  <Feature/>
 	
-	<section class="section feature" id="feature">
-		<div class="container">
-			<div class="feature-wrapper">
-				<div class="feature-block">
-					<h2 class="section__title feature__title">
-						Технические характеристики
-					</h2>
-					<ul class="feature-list">
-						<li class="feature__item">
-							<button type="button" class="feature__link feature__link_active">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Спецификация
-									</span>
-								</div>
-							</button>
-							<!-- /.feature__link -->
-							<ul class="feature-sub">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Привод автомобиля
-									</span>
-									<span class="feature-sub__value">
-										Передний
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Разгон до 100 км/ч, сек
-									</span>
-									<span class="feature-sub__value">
-										8.1
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Трансмиссия
-									</span>
-									<span class="feature-sub__value">
-										7G-DCT
-									</span>
-								</li>
-							</ul>
-							<!-- /.feature-list-sub -->
-						</li>
-						<li class="feature__item">
-							<button type="button" class="feature__link">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Двигатель
-									</span>
-								</div>
-							</button>
-							<ul class="feature-sub hidden">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Двигатель
-									</span>
-									<span class="feature-sub__value">
-										1.332 л / 163 л.с.
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Тип двигателя
-									</span>
-									<span class="feature-sub__value">
-										Бензиновый
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Расход, л/100 км
-									</span>
-									<span class="feature-sub__value">
-										5.4
-									</span>
-								</li>
-							</ul>
-						</li>
-						<li class="feature__item">
-							<button type="button" class="feature__link">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Ходовые качества
-									</span>
-								</div>
-							</button>
-							<ul class="feature-sub hidden">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Система экстренного торможения
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Система контроля давления в шинах
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Система контроля вредных выбросов EURO 6
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Защита пешеходов
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-							</ul>
-						</li>
-						<li class="feature__item">
-							<button type="button" class="feature__link">
-								<div class="feature-item-wrap">
-									<span class="feature-item__title">
-										Комфорт
-									</span>
-								</div>
-							</button>
-							<ul class="feature-sub hidden">
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Климат-контроль
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Бортовой компьютер
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Датчик света и дождя
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Стеклоочистители с датчиком дождя
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-								<li class="feature-sub__item">
-									<span class="feature-sub__name">
-										Круиз-контроль
-									</span>
-									<span class="feature-sub__value">
-										+
-									</span>
-								</li>
-							</ul>
-						</li>
-					</ul>
-					<!-- /.feature-list -->
-				</div>
-				<!-- /.feature-block -->
-			</div>
-			<!-- /.feature-wrapper -->
-		</div>
-	</section>
+	<Contacts/>
 	<!-- feature (end) -->
 
 	<!-- contacts (start) -->
-	<section class="section contacts" id="contacts">
-		<div class="container">
-			<div class="contacts-wrapper">
-				<div class="contacts-form">
-					<h2 class="section__title">
-						Заявка на тест-драйв
-					</h2>
-					<p class="contacts__descr">
-						Оставьте свои контакты. Мы свяжемся с
-						вами и пригласим на тест-драйв в
-						удобное для вас время
-					</p>
-					<form class="form form-test-drive">
-						<input type="text" class="input" name="name" placeholder="Имя">
-						<input type="mail" class="input" name="mail" placeholder="Электронная почта">
-						<input type="text" class="input" name="phone" placeholder="Телефон">
-						<button type="submit" class="button form__button">
-							Отправить
-						</button>
-					</form>
-				</div>
-				<!-- /.contacts-form -->
-			</div>
-			<!-- /.contacts-wrapper -->
-		</div>
-	</section>
+	
 	<!-- contacts (end) -->
 
 	<!-- modal (start) -->
-	<div class="modal hidden">
-		<div class="overlay"></div>
-		<div class="modal-wrapper">
-			<h2 class="section__title modal__title">
-				Подробное описание
-				комплектаций
-			</h2>
-			<p class="modal__descr">
-				Оставьте адрес электронной почты, на
-				который хотите получить документ с
-				описанием комплектаций
-			</p>
-			<button type="button" class="modal__close" aria-label="закрыть модальное окно">
-			</button>
-			<form class="form modal__form">
-				<input type="text" name="name" class="input modal__input" placeholder="Имя">
-				<input type="mail" name="mail" class="input modal__input" placeholder="Электронная почта">
-				<div class="modal-buttons">
-					<button type="submit" class="button modal__button">
-						Отправить
-					</button>
-				</div>
-			</form>
-			<!-- /.form modal__form -->
-		</div>
-	</div>
+	<Modal/>
 </template>
+
+<script>
+import Header from '@/components/Header'
+import Main from '@/components/Main'
+import Design from '@/components/Design'
+import Feature from '@/components/Feature'
+import Contacts from '@/components/Contacts'
+import Modal from '@/components/Modal'
+export default {
+  components:{
+    Header,
+    Main,
+    Design,
+    Feature,
+    Feature,
+    Contacts,
+    Modal
+  }
+}
+</script>
 
 <style>
 #app {
@@ -878,7 +525,7 @@ a {
 /* main */
 .main-wrapper {
   position: relative;
-  /* background-image: url("../img/car/image-1.png"); */
+  background-image: url("../src/assets/img/car/image-1.png");
   background-repeat: no-repeat;
   background-position: 90% 35%;
   background-size: 900px;
@@ -928,7 +575,7 @@ a {
 
 .play {
   display: block;
-  /* background-image: url("../img/icon/play.svg"); */
+  background-image: url("../src/assets/img/icon/play.svg");
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 30px;
@@ -1025,7 +672,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /* background-image: url(../img/car/image-2.png); */
+  background-image: url(../src/assets/img/car/image-2.png);
   background-position: left;
   background-repeat: no-repeat;
   background-size: 50%;
@@ -1111,7 +758,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* background: url("../img/car/image-3.png") no-repeat right; */
+  background: url("../src/assets/img/car/image-3.png") no-repeat right;
 }
 
 .contacts__descr {
@@ -1185,7 +832,7 @@ a {
   right: 15px;
   border: none;
   background-color: transparent;
-  /* background-image: url("../img/icon/close.svg"); */
+  background-image: url("../src/assets/img/icon/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
